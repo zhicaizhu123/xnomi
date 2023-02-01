@@ -1,0 +1,26 @@
+{
+  "name": "@xnomi/time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/time.js",
+  "module": "./dist/time.module.js",
+  "unpkg": "./dist/time.umd.js",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/time.cjs",
+    "default": "./dist/time.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
+}

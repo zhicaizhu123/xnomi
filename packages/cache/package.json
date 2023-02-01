@@ -1,0 +1,27 @@
+{
+  "name": "@xnomi/cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/cache.js",
+  "module": "./dist/cache.module.js",
+  "unpkg": "./dist/cache.umd.js",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/cache.cjs",
+    "default": "./dist/cache.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@xnomi/utils": "*",
+    "js-cookie": "^3.0.1"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
+}

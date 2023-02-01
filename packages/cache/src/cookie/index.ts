@@ -1,0 +1,84 @@
+/**
+ * @module Cookie
+ */
+
+import { json2Params, params2Json, removeParamsKeys } from '@xnomi/utils'
+import Cookies from 'js-cookie'
+
+/**
+ * 指定命名空间的cookie类
+ *
+ * @class XnomiCookie
+ */
+class XnomiCookie {
+  private namespace!: string
+
+  /**
+   * 创建一个XnomiCookie实例。
+   *
+   * @param {string} namespace 命名空间
+   */
+  constructor(namespace) {
+    this.namespace = namespace
+  }
+
+  /**
+   * 获取当前命名空间的cookie值
+   *
+   * @param {string} key key值
+   * @return {string}
+   */
+  getCookie(key: string) {
+    const data = Cookies.get(this.namespace)
+    if (!data) return ''
+    const json = params2Json(data)
+    return json[key] || ''
+  }
+
+  /**
+   * 设置当前命名空间的cookie值
+   *
+   * @param {string} key 键值
+   * @param {string} value 设置值
+   * @param {Cookies.CookieAttributes} [options] cookie的配置项
+   */
+  setCookie(key: string, value: string, options?: Cookies.CookieAttributes) {
+    const data = Cookies.get(this.namespace)
+    const json = data ? params2Json(data) : {}
+    json[key] = value
+    Cookies.set(this.namespace, json2Params(json), options)
+  }
+
+  /**
+   * 移除当前命名空间的cookie值
+   *
+   * @param {string} key 键值
+   * @param {Cookies.CookieAttributes} [options] cookie的配置项
+   */
+  removeCookie(key: string, options?: Cookies.CookieAttributes) {
+    const data = Cookies.get(this.namespace)
+    if (!data) return
+    const res = removeParamsKeys(data, [key])
+    Cookies.set(this.namespace, res, options)
+  }
+
+  /**
+   * 清空当前命名空间的cookie
+   *
+   * @param {Cookies.CookieAttributes} [options] cookie的配置项
+   */
+  clearCookie(options?: Cookies.CookieAttributes) {
+    Cookies.remove(this.namespace, options)
+  }
+}
+
+/**
+ * 创建指定命名空间的cookie
+ *
+ * @export
+ * @param {string} [namespace='xiao-nomi'] 命名空间
+ * @return {XnomiCookie} 
+ */
+export function createCookie(namespace = 'xiao-nomi') {
+  return new XnomiCookie(namespace)
+}

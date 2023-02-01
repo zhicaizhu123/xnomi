@@ -1,0 +1,28 @@
+{
+  "name": "@xnomi/router-guard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/router-guard.js",
+  "module": "./dist/router-guard.module.js",
+  "unpkg": "./dist/router-guard.umd.js",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/router-guard.cjs",
+    "default": "./dist/router-guard.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@xnomi/utils": "*",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "vue": "^3.2.45"
+  }
+}

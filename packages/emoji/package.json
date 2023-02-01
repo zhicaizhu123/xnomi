@@ -1,0 +1,23 @@
+{
+  "name": "@xnomi/emoji",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/emoji.js",
+  "module": "./dist/emoji.module.js",
+  "unpkg": "./dist/emoji.umd.js",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/emoji.cjs",
+    "default": "./dist/emoji.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@xnomi/is",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/is.js",
+  "module": "./dist/is.module.js",
+  "unpkg": "./dist/is.umd.js",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/is.cjs",
+    "default": "./dist/is.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
+}
