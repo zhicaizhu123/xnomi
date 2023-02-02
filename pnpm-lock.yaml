@@ -27,6 +27,15 @@ importers:
     devDependencies:
       microbundle: registry.npmmirror.com/microbundle/0.15.1
 
+  packages/color:
+    specifiers:
+      dayjs: ^1.11.7
+      microbundle: ^0.15.1
+    dependencies:
+      dayjs: registry.npmmirror.com/dayjs/1.11.7
+    devDependencies:
+      microbundle: registry.npmmirror.com/microbundle/0.15.1
+
   packages/emoji:
     specifiers:
       microbundle: ^0.15.1
@@ -36,6 +45,15 @@ importers:
   packages/is:
     specifiers:
       microbundle: ^0.15.1
+    devDependencies:
+      microbundle: registry.npmmirror.com/microbundle/0.15.1
+
+  packages/log:
+    specifiers:
+      dayjs: ^1.11.7
+      microbundle: ^0.15.1
+    dependencies:
+      dayjs: registry.npmmirror.com/dayjs/1.11.7
     devDependencies:
       microbundle: registry.npmmirror.com/microbundle/0.15.1
 

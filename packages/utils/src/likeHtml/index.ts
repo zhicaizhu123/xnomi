@@ -2,7 +2,7 @@
  * @module likeHtml
  */
 
-import { faceEmojiPngMap } from '@flinks/emoji'
+import { faceEmojiPngMap } from '@xnomi/emoji'
 import { isImage } from '../file'
 import { isLink } from '../rules'
 import { getBaseUrl } from '../url'

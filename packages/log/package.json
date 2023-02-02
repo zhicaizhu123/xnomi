@@ -1,14 +1,14 @@
 {
-  "name": "@xnomi/color",
+  "name": "@xnomi/log",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/color.js",
-  "module": "./dist/color.module.js",
-  "unpkg": "./dist/color.umd.js",
+  "main": "./dist/log.js",
+  "module": "./dist/log.module.js",
+  "unpkg": "./dist/log.umd.js",
   "source": "src/index.ts",
   "exports": {
-    "require": "./dist/color.cjs",
-    "default": "./dist/color.modern.js"
+    "require": "./dist/log.cjs",
+    "default": "./dist/log.modern.js"
   },
   "scripts": {
     "build": "microbundle",

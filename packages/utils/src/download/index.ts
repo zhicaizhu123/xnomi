@@ -1,5 +1,4 @@
-import { dataURLtoBlob } from '../transfer'
-import { parseUrlParams } from '../url'
+import { dataURLtoBlob, parseUrlParams } from '../transfer'
 
 /**
  * 通过链接下载文件

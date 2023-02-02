@@ -590,4 +590,24 @@ export function http2https(url: string) {
   return url.replace(/^http:\/\//, 'https://')
 }
 
-
+/**
+ * 图片大小格式化
+ *
+ * @param {number} size 图片大小，byte单位
+ * @return {string}
+ */
+export function toFileSize(size: number): string {
+  const kb = 1024
+  const mb = kb * 1024
+  const gb = mb * 1024
+  if (size > gb) {
+    return `${Math.floor(size / gb)}Gb`
+  } else if (size > mb) {
+    return `${Math.floor(size / mb)}Mb`
+  } else if (size > kb) {
+    return `${Math.floor(size / kb)}Kb`
+  } else if (size > 0) {
+    return `${(size / kb).toFixed(1)}Kb`
+  }
+  return ''
+}

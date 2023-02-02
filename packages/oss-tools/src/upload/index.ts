@@ -5,7 +5,8 @@
 import OSS, { Checkpoint } from 'ali-oss'
 import { UploadFileOption, OssConfigModel, OssParams } from './model'
 import { validateFileCount, validateFileSize, validateFileType } from './validator'
-import { randomString, getFileSuffix, toFileSize } from '@xnomi/utils'
+import { randomString, toFileSize } from '@xnomi/utils'
+import { getFileSuffix } from '@xnomi/is'
 
 export * from './validator'
 export * from './model'

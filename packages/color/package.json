@@ -1,14 +1,14 @@
 {
-  "name": "@xnomi/color",
+  "name": "@xnomi/time",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/color.js",
-  "module": "./dist/color.module.js",
-  "unpkg": "./dist/color.umd.js",
+  "main": "./dist/time.js",
+  "module": "./dist/time.module.js",
+  "unpkg": "./dist/time.umd.js",
   "source": "src/index.ts",
   "exports": {
-    "require": "./dist/color.cjs",
-    "default": "./dist/color.modern.js"
+    "require": "./dist/time.cjs",
+    "default": "./dist/time.modern.js"
   },
   "scripts": {
     "build": "microbundle",
