@@ -16,13 +16,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@xnomi/utils": "*",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "microbundle": "^0.15.1",
     "vue": "^3.2.45"
   }
 }

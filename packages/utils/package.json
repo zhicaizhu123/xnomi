@@ -16,12 +16,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "@xnomi/is": "*",
-    "dayjs": "^1.11.7"
-  },
-  "devDependencies": {
-    "microbundle": "^0.15.1"
+    "@xnomi/is": "workspace:*"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "xnomi",
   "version": "1.0.0",
-  "description": "",
+  "description": "the packages for cache, color, emoji, type, log, oss-tools, time and utils ",
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -11,11 +11,29 @@
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.2",
-    "lerna": "^4.0.0",
+    "microbundle": "^0.15.1",
     "prettier": "^2.7.1"
   },
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-module-utils": "^2.7.4",
+    "eslint-scope": "^7.1.1",
+    "eslint-utils": "^3.0.0",
+    "eslint-visitor-keys": "^3.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhicaizhu123/xnomi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhicaizhu123/xnomi/issues"
+  },
+  "homepage": "https://github.com/zhicaizhu123/xnomi#readme"
 }

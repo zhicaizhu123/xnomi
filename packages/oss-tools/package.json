@@ -16,13 +16,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@xnomi/is": "*",
     "@xnomi/utils": "*",
     "ali-oss": "^6.17.1"
-  },
-  "devDependencies": {
-    "microbundle": "^0.15.1"
   }
 }

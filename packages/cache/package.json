@@ -1,7 +1,7 @@
 {
   "name": "@xnomi/cache",
   "version": "1.0.0",
-  "description": "",
+  "description": "The cache package for localStorage, sessionStorage and Cookie",
   "main": "./dist/cache.js",
   "module": "./dist/cache.module.js",
   "unpkg": "./dist/cache.umd.js",
@@ -18,10 +18,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@xnomi/utils": "*",
+    "@xnomi/utils": "workspace:*",
     "js-cookie": "^3.0.1"
   },
-  "devDependencies": {
-    "microbundle": "^0.15.1"
-  }
+  "devDependencies": {}
 }

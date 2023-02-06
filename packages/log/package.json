@@ -16,11 +16,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dayjs": "^1.11.7"
-  },
-  "devDependencies": {
-    "microbundle": "^0.15.1"
-  }
+  "license": "MIT"
 }
