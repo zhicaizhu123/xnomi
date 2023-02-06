@@ -21,5 +21,8 @@
     "@xnomi/is": "*",
     "@xnomi/utils": "*",
     "ali-oss": "^6.17.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

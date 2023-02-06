@@ -21,5 +21,8 @@
     "@xnomi/utils": "workspace:*",
     "js-cookie": "^3.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
 }
