@@ -14,8 +14,8 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["cache", "storage", "cookie"],
+  "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {
     "@xnomi/utils": "workspace:*",
@@ -24,5 +24,12 @@
   "devDependencies": {},
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhicaizhu123/xnomi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhicaizhu123/xnomi/issues"
   }
 }

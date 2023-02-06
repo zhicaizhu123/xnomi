@@ -14,13 +14,20 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["utils"],
+  "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {
     "@xnomi/is": "workspace:*"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhicaizhu123/xnomi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhicaizhu123/xnomi/issues"
   }
 }

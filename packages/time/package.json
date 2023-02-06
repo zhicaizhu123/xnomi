@@ -14,13 +14,20 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["timer", "date", "formatter"],
+  "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {
     "dayjs": "^1.11.7"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhicaizhu123/xnomi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhicaizhu123/xnomi/issues"
   }
 }
