@@ -1,13 +1,13 @@
 ---
-'@xnomi/cache': major
-'@xnomi/color': major
-'@xnomi/emoji': major
-'@xnomi/is': major
-'@xnomi/log': major
-'@xnomi/oss-tools': major
-'@xnomi/router-guard': major
-'@xnomi/time': major
-'@xnomi/utils': major
+'@xnomi/cache': patch
+'@xnomi/color': patch
+'@xnomi/emoji': patch
+'@xnomi/is': patch
+'@xnomi/log': patch
+'@xnomi/oss-tools': patch
+'@xnomi/router-guard': patch
+'@xnomi/time': patch
+'@xnomi/utils': patch
 ---
 
 update packange

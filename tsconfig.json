@@ -19,9 +19,5 @@
     "noImplicitAny": false,
     "skipLibCheck": true,
     "declaration": true,
-  },
-  "typedocOptions": {
-    "entryPoints": ["packages/cache/src/index.ts", "packages/color/src/index.ts"],
-    "out": "docs"
   }
 }

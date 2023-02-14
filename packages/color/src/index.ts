@@ -1,5 +1,5 @@
 /**
- * @module color
+ * @module color 颜色
  */
 
 /**

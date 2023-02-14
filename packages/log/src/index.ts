@@ -1,5 +1,5 @@
 /**
- * @module log
+ * @module log 日志
  */
 
 const systemConsole = {

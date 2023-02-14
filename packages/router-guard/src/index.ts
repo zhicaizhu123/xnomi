@@ -1,3 +1,7 @@
+/**
+ * @module router-guard 路由拦截器
+ */
+
 import { NavigationGuardNext, RouteLocationNormalized, Router } from 'vue-router'
 
 export type BeforeMiddlewareFn = (

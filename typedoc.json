@@ -1,0 +1,17 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "entryPointStrategy": "packages",
+  "entryPoints": ["."],
+  "exclude": ["**/*.js"],
+  "name": "xnomi工具库",
+  "readme": "./README.md",
+  "theme": "github-wiki",
+  "excludeTags": [
+    "@override",
+    "@virtual",
+    "@privateRemarks",
+  ],
+  "hideGenerator": true,
+  "disableSources": true,
+  "out": "docs"
+}
