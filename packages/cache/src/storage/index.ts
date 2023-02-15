@@ -8,7 +8,12 @@ export type StorageType = 'local' | 'session'
 
 const xnomiStoreMap = new Map()
 
-class Storage {
+/**
+ * 指定命名空间的loalStorage/sessionStorage类
+ *
+ * @class Storage
+ */
+export class Storage {
   private store: globalThis.Storage
   private namespace: string
   private state: { [x: string]: any }

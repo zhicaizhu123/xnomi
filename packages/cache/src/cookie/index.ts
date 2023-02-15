@@ -8,13 +8,13 @@ import Cookies from 'js-cookie'
 /**
  * 指定命名空间的cookie类
  *
- * @class XnomiCookie
+ * @class Cookie
  */
-class XnomiCookie {
+export class Cookie {
   private namespace!: string
 
   /**
-   * 创建一个XnomiCookie实例。
+   * 创建一个Cookie实例。
    *
    * @param {string} namespace 命名空间
    */
@@ -75,10 +75,9 @@ class XnomiCookie {
 /**
  * 创建指定命名空间的cookie
  *
- * @export
  * @param {string} [namespace='xiao-nomi'] 命名空间
- * @return {XnomiCookie} 
+ * @return {Cookie} 
  */
 export function createCookie(namespace = 'xiao-nomi') {
-  return new XnomiCookie(namespace)
+  return new Cookie(namespace)
 }

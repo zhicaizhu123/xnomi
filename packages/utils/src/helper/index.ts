@@ -5,6 +5,7 @@
 /**
  * 将await信息拆分为错误信息和正确数据
  *
+ * @category Helper
  * @template T
  * @template U
  * @param {Promise<T>} promise Promise类型参数
@@ -24,6 +25,7 @@ export function to<T, U = Error>(
 /**
  * 延时执行
  *
+ * @category Helper
  * @param {number} delayTime 延时时间，毫秒为单位
  * @return {Promise<unknown>} 返回Promise
  */
@@ -39,6 +41,7 @@ export function delay(delayTime: number) {
 /**
  * 延时执行，并可以取消
  *
+ * @category Helper
  * @param {number} duration 延时执行时间
  * @param {Fn} fn 执行函数
  * @param {*} rest 执行函数参数
@@ -57,6 +60,7 @@ export function defer(duration: number, fn: Fn, ...rest) {
 /**
  * 组合高阶函数
  *
+ * @category Helper
  * @param {Fn} filter
  * @param {Fn} fn
  * @return {(...args: any[]) => void}
@@ -71,6 +75,7 @@ function createFilterWrapper(filter: Fn, fn: Fn) {
 /**
  * 防抖
  *
+ * @category Helper
  * @param {number} ms 防抖阈值，毫秒为单位
  * @return {*}
  */
@@ -88,6 +93,7 @@ function debounceFilter(ms: number) {
 /**
  * 截流
  *
+ * @category Helper
  * @param {number} ms 截流阈值，毫秒为单位
  * @param {boolean} [trailing=true] 是否在尾部执行
  * @return {*}
@@ -125,6 +131,7 @@ function throttleFilter(ms: number, trailing = true) {
 /**
  * 防抖
  *
+ * @category Helper
  * @param {Fn} fn 在延迟毫秒后执行的函数
  * @param {number} [ms=200] 以毫秒为单位的零或更大的延迟。对于事件回调，100或250(甚至更高)左右的值是最有用的
  */
@@ -135,6 +142,7 @@ export function debounceFn(fn: Fn, ms = 200) {
 /**
  * 截流，特别适用于速率限制，在诸如调整大小和滚动等事件上执行处理程序。
  *
+ * @category Helper
  * @param {Fn} fn 延迟毫秒后执行的函数。' this '上下文和所有参数都按原样传递
  * @param {number} [ms=200] 以毫秒为单位的零或更大的延迟。对于事件回调，100或250(甚至更高)左右的值是最有用的
  * @param {boolean} [trailing=true] 是否尾部执行
@@ -146,6 +154,7 @@ export function throttleFn(fn: Fn, ms = 200, trailing = true) {
 /**
  * 生成随机数
  *
+ * @category Helper
  * @param {number} [len=5] 生成随机字符串的长度
  * @return {string}
  */
@@ -167,6 +176,7 @@ for (let i = 0; i <= 15; i++) {
 /**
  * 生成uuid
  *
+ * @category Helper
  * @return {string}
  */
 export function buildUUID(): string {
@@ -189,6 +199,7 @@ let unique = 0
 /**
  * 生成短的uuid
  *
+ * @category Helper
  * @param {string} [prefix=''] 前缀
  * @return {string}
  */
@@ -211,6 +222,7 @@ export function throwNoKeyError(error: string): Error {
 /**
  * 获取文本长度（一个表情包算一个字符）
  *
+ * @category Helper
  * @param {string} str 源字符串
  * @return {number}
  */
@@ -228,5 +240,6 @@ export function getTextLength(str: string) {
 /**
  * 空函数
  *
+ * @category Helper
  */
 export function noop() {}

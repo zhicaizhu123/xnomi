@@ -18,7 +18,8 @@
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {
-    "@xnomi/is": "workspace:*"
+    "@xnomi/is": "workspace:*",
+    "@xnomi/transfer": "workspace:*"
   },
   "publishConfig": {
     "access": "public"

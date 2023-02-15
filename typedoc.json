@@ -1,15 +1,28 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "entryPointStrategy": "packages",
-  "entryPoints": ["."],
+  // "entryPointStrategy": "packages",
+  "entryPoints": [
+    "packages/cache/src/index.ts",
+    "packages/color/src/index.ts",
+    "packages/cache/src/time.ts",
+    "packages/log/src/index.ts",
+    "packages/router-guard/src/index.ts",
+    "packages/oss-tools/src/index.ts",
+    "packages/utils/src/index.ts",
+    "packages/transfer/src/index.ts"
+  ],
   "exclude": ["**/*.js"],
   "name": "xnomi工具库",
   "readme": "./README.md",
-  "theme": "github-wiki",
+  "markedOptions": {
+    "headerIds": false
+  },
+  // "plugin": "typedoc-theme-hierarchy",
+  // "theme": "hierarchy",
   "excludeTags": [
     "@override",
     "@virtual",
-    "@privateRemarks",
+    "@privateRemarks"
   ],
   "hideGenerator": true,
   "disableSources": true,

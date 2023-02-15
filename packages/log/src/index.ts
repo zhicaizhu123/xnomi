@@ -9,9 +9,9 @@ const systemConsole = {
   debug: console.log,
 }
 
-type ConsoleType = keyof typeof systemConsole
+export type ConsoleType = keyof typeof systemConsole
 
-interface StyleConfigModel {
+export interface StyleConfigModel {
   /** 警告 */
   warn?: string;
   /** 普通 */
@@ -22,7 +22,7 @@ interface StyleConfigModel {
   debug?: string;
 }
 
-interface GlobalConsoleConfigModel {
+export interface GlobalConsoleConfigModel {
   /** 全局日志模块名称 */
   moduleName?: string;
   /** 不同日志的icon */

@@ -1,0 +1,34 @@
+{
+  "name": "@xnomi/transfer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/transfer.js",
+  "module": "./dist/transfer.module.js",
+  "unpkg": "./dist/transfer.umd.js",
+  "source": "src/index.ts",
+  "exports": {
+    "require": "./dist/transfer.cjs",
+    "default": "./dist/transfer.modern.js"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": ["date", "url", "formatter"],
+  "author": "zhicaizhu123 <zhicaizhu123@126.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@xnomi/is": "workspace:*",
+    "dayjs": "^1.11.7"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhicaizhu123/xnomi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhicaizhu123/xnomi/issues"
+  }
+}

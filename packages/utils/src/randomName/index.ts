@@ -15,7 +15,7 @@ function randomNum(minNum, maxNum) {
       break
   }
 }
-class RandomName {
+export class RandomName {
   private nickHeader = [
     '快乐的',
     '冷静的',
@@ -786,4 +786,7 @@ class RandomName {
   }
 }
 
+/**
+ * 生成随机数实例
+ */
 export const randomName = new RandomName()

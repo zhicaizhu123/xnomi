@@ -7,6 +7,7 @@ import { ViewportOffsetResult } from './types'
 /**
  * 动态加载js文件
  *
+ * @category DOM
  * @param {string} url 需要加载的 js 链接
  * @return {(Promise<void | Error>)} 返回的是个Promise对象
  */
@@ -33,6 +34,7 @@ export function loadJs(url: string, params?: Recordable): Promise<void | Error> 
 /**
  * 获取元素的样式
  *
+ * @category DOM
  * @param {HTMLElement|string|Window} el 当前元素
  * @param {string} style 需要查询样式的驼峰值，如 ：zIndex
  * @return {any}
@@ -52,6 +54,7 @@ export const getStyle = (el: HTMLElement, style: string | string[]) => {
 /**
  * 打开窗口
  *
+ * @category DOM
  * @param {string} url 链接
  * @param {({ target?: TargetContext | string; noopener?: boolean; noreferrer?: boolean })} [opt] 窗口选项
  */
@@ -69,6 +72,7 @@ export function openWindow(
 /**
  * 获取元素距离视图的偏移
  *
+ * @category DOM
  * @param {Element} element 计算的元素
  * @return {(DOMRect | number)}
  */
@@ -82,6 +86,7 @@ export function getBoundingClientRect(element: Element): DOMRect | number {
 /**
  * 获取元素到视图的偏移量
  *
+ * @category DOM
  * @param {Element} element 计算的元素
  * @return {ViewportOffsetResult}
  */
@@ -127,6 +132,7 @@ function trim(string: string) {
 /**
  * 判断是否有class
  *
+ * @category DOM
  * @param {Element} el 操作元素
  * @param {string} cls 判断className
  * @return {boolean}
@@ -144,6 +150,7 @@ export function hasClass(el: Element, cls: string) {
 /**
  * 添加class
  *
+ * @category DOM
  * @param {Element} el 操作元素
  * @param {string} cls 添加className
  */
@@ -170,6 +177,7 @@ export function addClass(el: Element, cls: string) {
 /**
  * 移除class
  *
+ * @category DOM
  * @param {Element} el 操作元素
  * @param {string} cls 移除className
  */

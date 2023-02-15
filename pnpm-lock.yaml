@@ -16,9 +16,6 @@ importers:
       microbundle: ^0.15.1
       prettier: ^2.7.1
       typedoc: ^0.23.25
-      typedoc-github-wiki-theme: ^1.0.1
-      typedoc-plugin-markdown: ^3.14.0
-      typedoc-theme-hierarchy: ^3.0.2
       typescript: ^4.9.5
     dependencies:
       eslint-import-resolver-node: registry.npmmirror.com/eslint-import-resolver-node/0.3.6
@@ -34,9 +31,6 @@ importers:
       microbundle: registry.npmmirror.com/microbundle/0.15.1
       prettier: registry.npmmirror.com/prettier/2.7.1
       typedoc: registry.npmmirror.com/typedoc/0.23.25_typescript@4.9.5
-      typedoc-github-wiki-theme: registry.npmmirror.com/typedoc-github-wiki-theme/1.0.1_2jv2fynowiopshcp5rvbcraspm
-      typedoc-plugin-markdown: registry.npmmirror.com/typedoc-plugin-markdown/3.14.0_typedoc@0.23.25
-      typedoc-theme-hierarchy: registry.npmmirror.com/typedoc-theme-hierarchy/3.0.2_typedoc@0.23.25
       typescript: registry.npmmirror.com/typescript/4.9.5
 
   packages/cache:
@@ -86,11 +80,21 @@ importers:
     dependencies:
       dayjs: registry.npmmirror.com/dayjs/1.11.7
 
+  packages/transfer:
+    specifiers:
+      '@xnomi/is': workspace:*
+      dayjs: ^1.11.7
+    dependencies:
+      '@xnomi/is': link:../is
+      dayjs: registry.npmmirror.com/dayjs/1.11.7
+
   packages/utils:
     specifiers:
       '@xnomi/is': workspace:*
+      '@xnomi/transfer': workspace:*
     dependencies:
       '@xnomi/is': link:../is
+      '@xnomi/transfer': link:../transfer
 
 packages:
 
@@ -4247,21 +4251,6 @@ packages:
       duplexer: registry.npmmirror.com/duplexer/0.1.2
     dev: true
 
-  registry.npmmirror.com/handlebars/4.7.7:
-    resolution: {integrity: sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/handlebars/-/handlebars-4.7.7.tgz}
-    name: handlebars
-    version: 4.7.7
-    engines: {node: '>=0.4.7'}
-    hasBin: true
-    dependencies:
-      minimist: registry.npmmirror.com/minimist/1.2.7
-      neo-async: registry.npmmirror.com/neo-async/2.6.2
-      source-map: registry.npmmirror.com/source-map/0.6.1
-      wordwrap: registry.npmmirror.com/wordwrap/1.0.0
-    optionalDependencies:
-      uglify-js: registry.npmmirror.com/uglify-js/3.17.4
-    dev: true
-
   registry.npmmirror.com/hard-rejection/2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/hard-rejection/-/hard-rejection-2.1.0.tgz}
     name: hard-rejection
@@ -5321,12 +5310,6 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/natural-compare/-/natural-compare-1.4.0.tgz}
     name: natural-compare
     version: 1.4.0
-
-  registry.npmmirror.com/neo-async/2.6.2:
-    resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/neo-async/-/neo-async-2.6.2.tgz}
-    name: neo-async
-    version: 2.6.2
-    dev: true
 
   registry.npmmirror.com/netmask/2.0.2:
     resolution: {integrity: sha512-dBpDMdxv9Irdq66304OLfEmQ9tbNRFnFTuZiLo+bD+r332bBmMJ8GBLXklIXXgxd3+v9+KUnZaUR5PJMa75Gsg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/netmask/-/netmask-2.0.2.tgz}
@@ -7345,43 +7328,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  registry.npmmirror.com/typedoc-github-wiki-theme/1.0.1_2jv2fynowiopshcp5rvbcraspm:
-    resolution: {integrity: sha512-FaO7fENGK6IJLpkddbNXxJfNbooF9KBC7xfk7Lj4uqG5SCC7YQFPTLDyNmbpJKO93QEenRYgqBwI5E5d/bKrHw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typedoc-github-wiki-theme/-/typedoc-github-wiki-theme-1.0.1.tgz}
-    id: registry.npmmirror.com/typedoc-github-wiki-theme/1.0.1
-    name: typedoc-github-wiki-theme
-    version: 1.0.1
-    peerDependencies:
-      typedoc: '>=0.22.9'
-      typedoc-plugin-markdown: '>=3.11.10'
-    dependencies:
-      typedoc: registry.npmmirror.com/typedoc/0.23.25_typescript@4.9.5
-      typedoc-plugin-markdown: registry.npmmirror.com/typedoc-plugin-markdown/3.14.0_typedoc@0.23.25
-    dev: true
-
-  registry.npmmirror.com/typedoc-plugin-markdown/3.14.0_typedoc@0.23.25:
-    resolution: {integrity: sha512-UyQLkLRkfTFhLdhSf3RRpA3nNInGn+k6sll2vRXjflaMNwQAAiB61SYbisNZTg16t4K1dt1bPQMMGLrxS0GZ0Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typedoc-plugin-markdown/-/typedoc-plugin-markdown-3.14.0.tgz}
-    id: registry.npmmirror.com/typedoc-plugin-markdown/3.14.0
-    name: typedoc-plugin-markdown
-    version: 3.14.0
-    peerDependencies:
-      typedoc: '>=0.23.0'
-    dependencies:
-      handlebars: registry.npmmirror.com/handlebars/4.7.7
-      typedoc: registry.npmmirror.com/typedoc/0.23.25_typescript@4.9.5
-    dev: true
-
-  registry.npmmirror.com/typedoc-theme-hierarchy/3.0.2_typedoc@0.23.25:
-    resolution: {integrity: sha512-aTVV3bpnVTmBwQi+kfV6IaknIzZZbiFcQhxCHZhCsxzntnPLQiaEQ/o7WldQ40u+NajgGJK+oVFaOf/eimt1TA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typedoc-theme-hierarchy/-/typedoc-theme-hierarchy-3.0.2.tgz}
-    id: registry.npmmirror.com/typedoc-theme-hierarchy/3.0.2
-    name: typedoc-theme-hierarchy
-    version: 3.0.2
-    peerDependencies:
-      typedoc: ^0.23.6
-    dependencies:
-      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
-      typedoc: registry.npmmirror.com/typedoc/0.23.25_typescript@4.9.5
-    dev: true
-
   registry.npmmirror.com/typedoc/0.23.25_typescript@4.9.5:
     resolution: {integrity: sha512-O1he153qVyoCgJYSvIyY3bPP1wAJTegZfa6tL3APinSZhJOf8CSd8F/21M6ex8pUY/fuY6n0jAsT4fIuMGA6sA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/typedoc/-/typedoc-0.23.25.tgz}
     id: registry.npmmirror.com/typedoc/0.23.25
@@ -7406,16 +7352,6 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
-
-  registry.npmmirror.com/uglify-js/3.17.4:
-    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/uglify-js/-/uglify-js-3.17.4.tgz}
-    name: uglify-js
-    version: 3.17.4
-    engines: {node: '>=0.8.0'}
-    hasBin: true
-    requiresBuild: true
-    dev: true
-    optional: true
 
   registry.npmmirror.com/unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/unbox-primitive/-/unbox-primitive-1.0.2.tgz}
@@ -7675,12 +7611,6 @@ packages:
     name: word-wrap
     version: 1.2.3
     engines: {node: '>=0.10.0'}
-
-  registry.npmmirror.com/wordwrap/1.0.0:
-    resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/wordwrap/-/wordwrap-1.0.0.tgz}
-    name: wordwrap
-    version: 1.0.0
-    dev: true
 
   registry.npmmirror.com/wrap-ansi/6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/wrap-ansi/-/wrap-ansi-6.2.0.tgz}

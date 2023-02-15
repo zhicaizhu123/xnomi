@@ -1,8 +1,9 @@
-import { dataURLtoBlob, parseUrlParams } from '../transfer'
+import { dataURLtoBlob, parseUrlParams } from '@xnomi/transfer'
 
 /**
  * 通过链接下载文件
  *
+ * @category Download
  * @param {string} url 文件链接
  * @param {string} name 文件名称
  */
@@ -31,6 +32,7 @@ export function downloadByUrl(url: string, name: string) {
 /**
  * 通过blob下载文件
  *
+ * @category Download
  * @param {(string | Blob)} data 数据源
  * @param {string} filename 文件名
  * @return {Promise<void>}
@@ -56,6 +58,7 @@ export async function downloadByBlob(data: Blob | MediaSource, filename: string)
 /**
  * 下载基于base64的图片
  *
+ * @category Download
  * @param buf base64字符串
  * @param filename 文件名
  * @param mime 类型
@@ -69,6 +72,7 @@ export function downloadByBase64(buf: string, filename: string, mime?: string, b
 /**
  * 通过后端返回的数据进行下载
  *
+ * @category Download
  * @param {*} res 需要下载的接口响应数据
  */
 export function downloadFileByResponse(res: any) {
@@ -82,6 +86,7 @@ export function downloadFileByResponse(res: any) {
 /**
  * 根据后台接口文件流进行下载
  *
+ * @category Download
  * @param {*} data 文件流
  * @param {*} filename 文件名
  * @param {*} mime 类型

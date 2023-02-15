@@ -2,7 +2,6 @@
  * @module utils 常用工具库
  */
 
-export * from './transfer'
 export * from './dom'
 export * from './download'
 export * from './helper'
