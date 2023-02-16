@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "docs": "typedoc --options typedoc.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

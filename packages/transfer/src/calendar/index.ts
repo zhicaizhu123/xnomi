@@ -3,7 +3,6 @@
  */
 
 /**
- * @category 日历处理
  * 日期元素模型结构
  */
 export interface DaysModel {
@@ -54,7 +53,6 @@ export interface DaysModel {
 }
 
 /**
- * @category 日历处理
  * 日历类配置项
  */
 export interface OptionsModel {

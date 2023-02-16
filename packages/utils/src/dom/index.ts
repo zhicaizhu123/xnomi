@@ -11,7 +11,7 @@ import { ViewportOffsetResult } from './types'
  * @param {string} url 需要加载的 js 链接
  * @return {(Promise<void | Error>)} 返回的是个Promise对象
  */
-export function loadJs(url: string, params?: Recordable): Promise<void | Error> {
+export function loadJs(url: string, params?: Record<string, string>): Promise<void | Error> {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script')
     script.type = 'text/javascript'

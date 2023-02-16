@@ -29,12 +29,12 @@ export * from './model'
 /**
  * 用a拼接obj里面的每对kv，并用b分割
  *
- * @param {Recordable} obj
+ * @param {Record<string, string | number>} obj
  * @param {string} a
  * @param {string} b
  * @return {string}
  */
-function joinStr(obj: Recordable): string {
+function joinStr(obj: Record<string, string | number>): string {
   return Object.keys(obj)
     .reduce((acc, cur) => {
       if (obj[cur]) return (acc += `,${cur}_${obj[cur]}`)
@@ -52,15 +52,17 @@ export class OssImage {
   /**
    * 处理的方法参数对象
    */
-  methodKeys: Recordable = {}
+  methodKeys: Partial<Record<OssMethodsType, Record<string, string | number>>> = {}
 
   private methodHandler(method: OssMethodsType) {
     return (key: any = throwNoKeyError(`方法：${method}，需要至少一个参数`), value?: any) => {
       if (typeof key === 'object') {
         this.methodKeys[method] = key
       } else {
-        if (!this.methodKeys[method]) this.methodKeys[method] = {}
-        this.methodKeys[method][key] = value
+        if (!this.methodKeys[method]) {
+          this.methodKeys[method] = {}
+        }
+        this.methodKeys[method]![key] = value
       }
       return this
     }

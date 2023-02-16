@@ -48,6 +48,7 @@ export interface Emitter {
 /**
  * 发布订阅
  *
+ * @category Mitt
  * @param {EventHandlerMap} [all] 全部
  * @return {Emitter}
  */

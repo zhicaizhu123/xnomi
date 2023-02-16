@@ -28,7 +28,7 @@ const defaultOption: Partial<UploadFileOption> = {
 export class Upload {
   private stsConfig: OssParams | {} = {}
 
-  private checkpoints: Recordable<Checkpoint> = {}
+  private checkpoints: Record<string, Checkpoint> = {}
 
   private option!: UploadFileOption
 
@@ -91,7 +91,7 @@ export class Upload {
    * 刷新上传的token签名配置信息
    *
    * @private
-   * @return {Promise<Recordable>}
+   * @return {} Promise<Record<string, string>>
    */
   private async refreshSTSToken() {
     const { region, bucket, accessKeyId, accessKeySecret, stsToken, endpoint } =

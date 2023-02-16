@@ -43,11 +43,11 @@ export function delay(delayTime: number) {
  *
  * @category Helper
  * @param {number} duration 延时执行时间
- * @param {Fn} fn 执行函数
+ * @param {(...args) => any} fn 执行函数
  * @param {*} rest 执行函数参数
  * @return {() => void}
  */
-export function defer(duration: number, fn: Fn, ...rest) {
+export function defer(duration: number, fn: (...args) => any, ...rest) {
   const timer = setTimeout(() => {
     fn(...rest)
   }, duration)

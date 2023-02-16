@@ -14,7 +14,9 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": ["utils"],
+  "keywords": [
+    "utils"
+  ],
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {

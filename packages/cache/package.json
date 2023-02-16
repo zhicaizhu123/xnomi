@@ -14,14 +14,17 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": ["cache", "storage", "cookie"],
+  "keywords": [
+    "cache",
+    "storage",
+    "cookie"
+  ],
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {
     "@xnomi/utils": "workspace:*",
     "js-cookie": "^3.0.1"
   },
-  "devDependencies": {},
   "publishConfig": {
     "access": "public"
   },

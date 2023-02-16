@@ -14,7 +14,11 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": ["date", "url", "formatter"],
+  "keywords": [
+    "date",
+    "url",
+    "formatter"
+  ],
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {

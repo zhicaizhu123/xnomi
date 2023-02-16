@@ -14,25 +14,25 @@ export type FilterKeysType = 'keep' | 'remove'
  * @param {FilterKeysType} type 类型
  * - 'keep'：保留字段
  * - 'remove'：删除字段
- * @return {Recordable<any>} 返回处理后的对象
+ * @return {Record<string, any>} 返回处理后的对象
  */
 const filterKeys =
   (type: FilterKeysType) =>
-  (obj: Recordable, keys: string[] = []) =>
+  (obj: Record<string, any>, keys: string[] = []) =>
     Object.keys(obj).reduce((acc, key) => {
       if (type === 'keep' ? keys.includes(key) : !keys.includes(key)) {
         acc[key] = obj[key]
       }
       return acc
-    }, {} as Recordable)
+    }, {} as Record<string, any>)
 
 /**
  * 保留给定字段
  *
  * @category 数据转换
- * @param {Recordable} obj 要处理的对象
+ * @param {Record<string, any>} obj 要处理的对象
  * @param {string[]} [keys=[]] 要保留的字段列表
- * @return {Recordable<any>} 返回已保留对应字段后的对象
+ * @return {Record<string, any>} 返回已保留对应字段后的对象
  */
 export const keepKeys = filterKeys('keep')
 
@@ -40,9 +40,9 @@ export const keepKeys = filterKeys('keep')
  * 删除给定字段
  *
  * @category 数据转换
- * @param {Recordable} obj 要处理的对象
+ * @param {Record<string, any>} obj 要处理的对象
  * @param {string[]} [keys=[]] 要删除的字段列表
- * @return {Recordable<any>} 返回已移除对应字段后的对象
+ * @return {Record<string, any>} 返回已移除对应字段后的对象
  */
 export const removeKeys = filterKeys('remove')
 
@@ -54,12 +54,12 @@ export const removeKeys = filterKeys('remove')
  * @param {object} [rules={}] key-value键值对，key 为 原字段，value为替换字段
  * @returns
  */
-export const replaceKeys = (obj: Recordable, rules: Recordable = {}) => {
+export const replaceKeys = (obj: Record<string, any>, rules: Record<string, any> = {}) => {
   const keys: string[] = Object.keys(rules)
   return Object.keys(obj).reduce((acc, key) => {
     acc[keys.includes(key) ? rules[key] : key] = obj[key]
     return acc
-  }, {} as Recordable)
+  }, {} as Record<string, any>)
 }
 
 /**
@@ -96,7 +96,7 @@ export function hash2List<T, U = T>(map: Record<string, T>, cb?: (item: T) => U)
   })  as unknown as U[]
 }
 
-const DEFAULT_CONFIG = {
+export const DEFAULT_CONFIG = {
   id: 'id',
   parentId: 'parentId',
 }
@@ -161,7 +161,7 @@ export function tree2List<T extends { children?: T[] }>(tree: T[]) {
  *
  * @category 数据转换
  * @param {T[]} tree 树形结构数据
- * @param {Fn} [handler] 每个节点的处理函数和判断是否中断
+ * @param {(item: T) => void | boolean} [handler] 每个节点的处理函数和判断是否中断
  */
 export function forEachTree<T extends { children?: T[] }>(tree: T[], handler?: (item: T) => void | boolean) {
   const list: T[] = [...tree]
