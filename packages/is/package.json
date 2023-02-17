@@ -1,6 +1,6 @@
 {
   "name": "@xnomi/is",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "main": "./dist/is.js",
@@ -16,7 +16,10 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": ["types", "is"],
+  "keywords": [
+    "types",
+    "is"
+  ],
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "publishConfig": {

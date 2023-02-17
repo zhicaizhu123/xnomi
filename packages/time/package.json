@@ -1,6 +1,6 @@
 {
   "name": "@xnomi/time",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "main": "./dist/time.js",
@@ -16,7 +16,11 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": ["timer", "date", "formatter"],
+  "keywords": [
+    "timer",
+    "date",
+    "formatter"
+  ],
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {

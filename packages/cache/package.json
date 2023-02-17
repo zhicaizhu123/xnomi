@@ -1,6 +1,6 @@
 {
   "name": "@xnomi/cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The cache package for localStorage, sessionStorage and Cookie",
   "type": "module",
   "main": "./dist/cache.js",

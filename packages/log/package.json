@@ -1,6 +1,6 @@
 {
   "name": "@xnomi/log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "main": "./dist/log.js",
@@ -16,7 +16,10 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": ["log", "custom log"],
+  "keywords": [
+    "log",
+    "custom log"
+  ],
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "publishConfig": {

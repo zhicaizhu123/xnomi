@@ -1,6 +1,6 @@
 {
   "name": "@xnomi/emoji",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "main": "./dist/emoji.js",
@@ -16,7 +16,9 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": ["emoji"],
+  "keywords": [
+    "emoji"
+  ],
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "publishConfig": {

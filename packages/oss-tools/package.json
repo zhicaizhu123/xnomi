@@ -1,6 +1,6 @@
 {
   "name": "@xnomi/oss-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "main": "./dist/oss-tools.js",
@@ -16,7 +16,11 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "keywords": ["ali-oss", "format video", "format image"],
+  "keywords": [
+    "ali-oss",
+    "format video",
+    "format image"
+  ],
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {
