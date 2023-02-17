@@ -1,19 +1,22 @@
 {
   "name": "@xnomi/transfer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
-  "type": "module",
-  "main": "./dist/transfer.js",
-  "module": "./dist/transfer.module.js",
-  "unpkg": "./dist/transfer.umd.js",
+  "main": "./dist/transfer.cjs",
+  "module": "./dist/transfer.mjs",
+  "unpkg": "./dist/transfer.iife.min.js",
+  "jsdelivr": "./dist/transfer.iife.min.js",
   "source": "src/index.ts",
-  "types": "/dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/transfer.cjs",
-    "default": "./dist/transfer.modern.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/transfer.cjs",
+      "import": "./dist/transfer.mjs"
+    }
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "rimraf ./dist && microbundle --name xnomiTransfer",
     "dev": "microbundle watch"
   },
   "keywords": [

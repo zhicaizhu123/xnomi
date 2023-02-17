@@ -6,6 +6,8 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "docs": "typedoc --options typedoc.json",
+    "build": "pnpm --filter \"@xnomi/**\" build",
+    "dev": "pnpm --filter \"@xnomi/**\" dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,6 +20,7 @@
     "eslint-plugin-import": "^2.25.2",
     "microbundle": "^0.15.1",
     "prettier": "^2.7.1",
+    "rimraf": "^4.1.2",
     "typedoc": "^0.23.25",
     "typescript": "^4.9.5"
   },

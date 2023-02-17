@@ -2,8 +2,9 @@
  * @module ossImage
  */
 
-import { throwNoKeyError, decamelize } from '@xnomi/utils'
+import { throwNoKeyError} from '@xnomi/utils'
 import { isLink } from '@xnomi/is'
+import { decamelize } from '@xnomi/transfer'
 import {
   OssMethodsType,
   OssResize,

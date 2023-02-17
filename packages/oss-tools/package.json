@@ -1,19 +1,22 @@
 {
   "name": "@xnomi/oss-tools",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
-  "type": "module",
-  "main": "./dist/oss-tools.js",
-  "module": "./dist/oss-tools.module.js",
-  "unpkg": "./dist/oss-tools.umd.js",
+  "main": "./dist/oss-tools.cjs",
+  "module": "./dist/oss-tools.mjs",
+  "unpkg": "./dist/oss-tools.iife.min.js",
+  "jsdelivr": "./dist/oss-tools.iife.min.js",
   "source": "src/index.ts",
-  "types": "/dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/oss-tools.cjs",
-    "default": "./dist/oss-tools.modern.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/oss-tools.cjs",
+      "import": "./dist/oss-tools.mjs"
+    }
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "rimraf ./dist && microbundle --name xnomiOssTools",
     "dev": "microbundle watch"
   },
   "keywords": [
@@ -26,6 +29,7 @@
   "dependencies": {
     "@xnomi/is": "*",
     "@xnomi/utils": "*",
+    "@xnomi/transfer": "*",
     "ali-oss": "^6.17.1"
   },
   "publishConfig": {

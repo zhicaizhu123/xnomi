@@ -1,5 +1,16 @@
 # @xnomi/transfer
 
+## 1.1.0
+
+### Minor Changes
+
+- update exports type
+
+### Patch Changes
+
+- Updated dependencies
+  - @xnomi/is@1.1.0
+
 ## 1.0.1
 
 ### Patch Changes

@@ -2,7 +2,7 @@
  * @module store
  */
 
-import { removeKeys } from '@xnomi/utils'
+import { removeKeys } from '@xnomi/transfer'
 
 export type StorageType = 'local' | 'session'
 

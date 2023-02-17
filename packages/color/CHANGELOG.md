@@ -1,5 +1,11 @@
 # @xnomi/color
 
+## 1.1.0
+
+### Minor Changes
+
+- update exports type
+
 ## 1.0.1
 
 ### Patch Changes

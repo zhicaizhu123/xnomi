@@ -2,7 +2,7 @@
  * @module Cookie
  */
 
-import { json2Params, params2Json, removeParamsKeys } from '@xnomi/utils'
+import { json2Params, params2Json, removeParamsKeys } from '@xnomi/transfer'
 import Cookies from 'js-cookie'
 
 /**

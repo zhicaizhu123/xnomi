@@ -1,19 +1,22 @@
 {
   "name": "@xnomi/cache",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "The cache package for localStorage, sessionStorage and Cookie",
-  "type": "module",
-  "main": "./dist/cache.js",
-  "module": "./dist/cache.module.js",
-  "unpkg": "./dist/cache.umd.js",
+  "main": "./dist/cache.cjs",
+  "module": "./dist/cache.mjs",
+  "unpkg": "./dist/cache.iife.min.js",
+  "jsdelivr": "./dist/cache.iife.min.js",
   "source": "src/index.ts",
-  "types": "/dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/cache.cjs",
-    "default": "./dist/cache.modern.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/cache.cjs",
+      "import": "./dist/cache.mjs"
+    }
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "rimraf ./dist && microbundle --name xnomiCache",
     "dev": "microbundle watch"
   },
   "keywords": [
@@ -24,7 +27,7 @@
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {
-    "@xnomi/utils": "workspace:*",
+    "@xnomi/transfer": "workspace:*",
     "js-cookie": "^3.0.1"
   },
   "publishConfig": {

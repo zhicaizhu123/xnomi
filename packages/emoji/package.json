@@ -1,19 +1,22 @@
 {
   "name": "@xnomi/emoji",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
-  "type": "module",
-  "main": "./dist/emoji.js",
-  "module": "./dist/emoji.module.js",
-  "unpkg": "./dist/emoji.umd.js",
+  "main": "./dist/emoji.cjs",
+  "module": "./dist/emoji.mjs",
+  "unpkg": "./dist/emoji.iife.min.js",
+  "jsdelivr": "./dist/emoji.iife.min.js",
   "source": "src/index.ts",
-  "types": "/dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/emoji.cjs",
-    "default": "./dist/emoji.modern.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/emoji.cjs",
+      "import": "./dist/emoji.mjs"
+    }
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "rimraf ./dist && microbundle --name xnomiEmoji",
     "dev": "microbundle watch"
   },
   "keywords": [

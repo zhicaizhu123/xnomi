@@ -1,19 +1,22 @@
 {
   "name": "@xnomi/is",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
-  "type": "module",
-  "main": "./dist/is.js",
-  "module": "./dist/is.module.js",
-  "unpkg": "./dist/is.umd.js",
+  "main": "./dist/is.cjs",
+  "module": "./dist/is.mjs",
+  "unpkg": "./dist/is.iife.min.js",
+  "jsdelivr": "./dist/is.iife.min.js",
   "source": "src/index.ts",
-  "types": "/dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/is.cjs",
-    "default": "./dist/is.modern.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/is.cjs",
+      "import": "./dist/is.mjs"
+    }
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "rimraf ./dist && microbundle --name xnomiIs",
     "dev": "microbundle watch"
   },
   "keywords": [

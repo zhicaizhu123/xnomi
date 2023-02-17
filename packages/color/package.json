@@ -1,19 +1,22 @@
 {
   "name": "@xnomi/color",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
-  "type": "module",
-  "main": "./dist/color.js",
-  "module": "./dist/color.module.js",
-  "unpkg": "./dist/color.umd.js",
+  "main": "./dist/color.cjs",
+  "module": "./dist/color.mjs",
+  "unpkg": "./dist/color.iife.min.js",
+  "jsdelivr": "./dist/color.iife.min.js",
   "source": "src/index.ts",
-  "types": "/dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/color.cjs",
-    "default": "./dist/color.modern.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/color.cjs",
+      "import": "./dist/color.mjs"
+    }
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "rimraf ./dist && microbundle --name xnomiColor",
     "dev": "microbundle watch"
   },
   "keywords": [

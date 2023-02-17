@@ -1,19 +1,22 @@
 {
   "name": "@xnomi/router-guard",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
-  "type": "module",
-  "main": "./dist/router-guard.js",
-  "module": "./dist/router-guard.module.js",
-  "unpkg": "./dist/router-guard.umd.js",
+  "main": "./dist/router-guard.cjs",
+  "module": "./dist/router-guard.mjs",
+  "unpkg": "./dist/router-guard.iife.min.js",
+  "jsdelivr": "./dist/router-guard.iife.min.js",
   "source": "src/index.ts",
-  "types": "/dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/router-guard.cjs",
-    "default": "./dist/router-guard.modern.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/router-guard.cjs",
+      "import": "./dist/router-guard.mjs"
+    }
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "rimraf ./dist && microbundle --name xnomiRouterGuard",
     "dev": "microbundle watch"
   },
   "keywords": [

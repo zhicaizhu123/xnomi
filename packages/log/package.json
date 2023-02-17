@@ -1,19 +1,22 @@
 {
   "name": "@xnomi/log",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "",
-  "type": "module",
-  "main": "./dist/log.js",
-  "module": "./dist/log.module.js",
-  "unpkg": "./dist/log.umd.js",
+  "main": "./dist/log.cjs",
+  "module": "./dist/log.mjs",
+  "unpkg": "./dist/log.iife.min.js",
+  "jsdelivr": "./dist/log.iife.min.js",
   "source": "src/index.ts",
-  "types": "/dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
-    "require": "./dist/log.cjs",
-    "default": "./dist/log.modern.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/log.cjs",
+      "import": "./dist/log.mjs"
+    }
   },
   "scripts": {
-    "build": "microbundle",
+    "build": "rimraf ./dist && microbundle --name xnomiLog",
     "dev": "microbundle watch"
   },
   "keywords": [

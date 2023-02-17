@@ -1,5 +1,16 @@
 # @xnomi/router-guard
 
+## 1.1.0
+
+### Minor Changes
+
+- update exports type
+
+### Patch Changes
+
+- Updated dependencies
+  - @xnomi/utils@1.1.0
+
 ## 1.0.1
 
 ### Patch Changes
