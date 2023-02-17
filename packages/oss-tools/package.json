@@ -2,10 +2,12 @@
   "name": "@xnomi/oss-tools",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./dist/oss-tools.js",
   "module": "./dist/oss-tools.module.js",
   "unpkg": "./dist/oss-tools.umd.js",
   "source": "src/index.ts",
+  "types": "/dist/index.d.ts",
   "exports": {
     "require": "./dist/oss-tools.cjs",
     "default": "./dist/oss-tools.modern.js"

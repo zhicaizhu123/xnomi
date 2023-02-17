@@ -2,10 +2,12 @@
   "name": "@xnomi/time",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./dist/time.js",
   "module": "./dist/time.module.js",
   "unpkg": "./dist/time.umd.js",
   "source": "src/index.ts",
+  "types": "/dist/index.d.ts",
   "exports": {
     "require": "./dist/time.cjs",
     "default": "./dist/time.modern.js"

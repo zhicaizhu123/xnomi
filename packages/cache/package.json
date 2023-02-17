@@ -2,10 +2,12 @@
   "name": "@xnomi/cache",
   "version": "1.0.0",
   "description": "The cache package for localStorage, sessionStorage and Cookie",
+  "type": "module",
   "main": "./dist/cache.js",
   "module": "./dist/cache.module.js",
   "unpkg": "./dist/cache.umd.js",
   "source": "src/index.ts",
+  "types": "/dist/index.d.ts",
   "exports": {
     "require": "./dist/cache.cjs",
     "default": "./dist/cache.modern.js"

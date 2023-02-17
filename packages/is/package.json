@@ -2,10 +2,12 @@
   "name": "@xnomi/is",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./dist/is.js",
   "module": "./dist/is.module.js",
   "unpkg": "./dist/is.umd.js",
   "source": "src/index.ts",
+  "types": "/dist/index.d.ts",
   "exports": {
     "require": "./dist/is.cjs",
     "default": "./dist/is.modern.js"

@@ -2,10 +2,12 @@
   "name": "@xnomi/router-guard",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./dist/router-guard.js",
   "module": "./dist/router-guard.module.js",
   "unpkg": "./dist/router-guard.umd.js",
   "source": "src/index.ts",
+  "types": "/dist/index.d.ts",
   "exports": {
     "require": "./dist/router-guard.cjs",
     "default": "./dist/router-guard.modern.js"

@@ -2,10 +2,12 @@
   "name": "@xnomi/transfer",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./dist/transfer.js",
   "module": "./dist/transfer.module.js",
   "unpkg": "./dist/transfer.umd.js",
   "source": "src/index.ts",
+  "types": "/dist/index.d.ts",
   "exports": {
     "require": "./dist/transfer.cjs",
     "default": "./dist/transfer.modern.js"

@@ -2,10 +2,12 @@
   "name": "@xnomi/log",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./dist/log.js",
   "module": "./dist/log.module.js",
   "unpkg": "./dist/log.umd.js",
   "source": "src/index.ts",
+  "types": "/dist/index.d.ts",
   "exports": {
     "require": "./dist/log.cjs",
     "default": "./dist/log.modern.js"

@@ -2,10 +2,12 @@
   "name": "@xnomi/color",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./dist/color.js",
   "module": "./dist/color.module.js",
   "unpkg": "./dist/color.umd.js",
   "source": "src/index.ts",
+  "types": "/dist/index.d.ts",
   "exports": {
     "require": "./dist/color.cjs",
     "default": "./dist/color.modern.js"
