@@ -15,7 +15,7 @@
   },
   // "plugin": "typedoc-theme-hierarchy",
   // "theme": "hierarchy",
-  "theme": "github-wiki",
+  // "theme": "github-wiki",
   "excludeTags": ["@override", "@virtual", "@privateRemarks"],
   "hideGenerator": true,
   "disableSources": true,
