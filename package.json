@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "doc": "rimraf ./docs && typedoc --options typedoc.json",
+    "doc": "rimraf ./wiki && typedoc --options typedoc.json",
     "build": "pnpm --filter \"@xnomi/**\" build",
     "dev": "pnpm --filter \"@xnomi/**\" dev",
     "test": "echo \"Error: no test specified\" && exit 1"
