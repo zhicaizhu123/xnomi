@@ -4,6 +4,8 @@
 
 /**
  * 是否支持rtc
+ *
+ * @category support
  */
 export function isSupportRTC() {
   return ['RTCPeerConnection', 'webkitRTCPeerConnection'].some((item) => item in window)
@@ -11,6 +13,8 @@ export function isSupportRTC() {
 
 /**
  * 是否支持全屏功能
+ *
+ * @category support
  */
 export function isSupportFullscreen() {
   const functionsMap = [
@@ -69,6 +73,7 @@ export function isSupportFullscreen() {
 /**
  * 是否支持flash
  *
+ * @category support
  * @function
  * @return {boolean}
  */

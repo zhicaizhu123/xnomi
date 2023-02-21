@@ -2,6 +2,14 @@
  * @module randomName
  */
 
+/**
+ * 生成随机数
+ *
+ * @category randomName
+ * @param {*} minNum 最小值
+ * @param {*} maxNum 最大值
+ * @return {*}
+ */
 function randomNum(minNum, maxNum) {
   switch (arguments.length) {
     case 1:
@@ -15,6 +23,12 @@ function randomNum(minNum, maxNum) {
       break
   }
 }
+
+/**
+ * 生成随机名字类
+ *
+ * @category randomName
+ */
 export class RandomName {
   private nickHeader = [
     '快乐的',
@@ -788,5 +802,7 @@ export class RandomName {
 
 /**
  * 生成随机数实例
+ *
+ * @category randomName
  */
 export const randomName = new RandomName()

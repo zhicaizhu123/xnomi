@@ -2,7 +2,7 @@
  * @module ossVideo
  */
 
-import { isLink, isNumber, isUnDef } from '@xnomi/is'
+import { isLink, isNumber, isUnDef } from '@xnomi/utils'
 
 /**
  * 处理阿里云视频封面参数接口
@@ -37,9 +37,6 @@ export interface OssVideoParams {
 function validate(url: string, params: OssVideoParams) {
   if (!isLink(url)) {
     throw new Error('请传递有效的url')
-  }
-  if (url.indexOf('.aliyuncs.com') === -1 && url.indexOf('.cdn.ling-shi.com') === -1) {
-    throw new Error('链接必须为阿里oss链接')
   }
   if (!isNumber(params.t) || params.t < 0) {
     throw new Error('截图时间[t]必须为大于或等于0的数字')

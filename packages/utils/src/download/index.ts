@@ -1,4 +1,4 @@
-import { dataURLtoBlob, parseUrlParams } from '@xnomi/transfer'
+import { dataURLtoBlob, parseUrlParams } from '../transfer'
 
 /**
  * 通过链接下载文件

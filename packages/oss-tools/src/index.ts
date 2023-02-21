@@ -1,5 +1,5 @@
 /**
- * @module oss-tools oss工具
+ * @module oss-tools
  */
 
 export * from './ossImage'

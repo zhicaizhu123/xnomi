@@ -27,9 +27,7 @@
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {
-    "@xnomi/is": "*",
     "@xnomi/utils": "*",
-    "@xnomi/transfer": "*",
     "ali-oss": "^6.17.1"
   },
   "publishConfig": {

@@ -2,9 +2,7 @@
  * @module ossImage
  */
 
-import { throwNoKeyError} from '@xnomi/utils'
-import { isLink } from '@xnomi/is'
-import { decamelize } from '@xnomi/transfer'
+import { throwNoKeyError, isLink, decamelize } from '@xnomi/utils'
 import {
   OssMethodsType,
   OssResize,
@@ -199,10 +197,6 @@ export class OssImage {
   get url() {
     if (!isLink(this.originUrl)) {
       console.warn('请传递有效的url')
-      return this.originUrl
-    }
-    if (this.originUrl.indexOf('.aliyuncs.com') === -1) {
-      console.warn('链接必须为阿里oss链接')
       return this.originUrl
     }
     const url = new URL(this.originUrl)

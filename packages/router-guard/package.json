@@ -27,7 +27,6 @@
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "dependencies": {
-    "@xnomi/utils": "*",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

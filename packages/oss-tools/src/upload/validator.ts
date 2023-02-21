@@ -2,7 +2,7 @@
  * @module 文件检验
  */
 
-import { getFileSuffix } from '@xnomi/is'
+import { getFileSuffix } from '@xnomi/utils'
 
 function fileHandler(file: File | File[]) {
   return !(file instanceof File) ? Array.from(file) : [file]

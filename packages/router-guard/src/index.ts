@@ -1,5 +1,5 @@
 /**
- * @module router-guard 路由拦截器
+ * @module router-guard
  */
 
 import { NavigationGuardNext, RouteLocationNormalized, Router } from 'vue-router'

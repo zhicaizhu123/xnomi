@@ -13,7 +13,7 @@ export interface ApiHandler<T> {
  * - pad：将原图缩放为指定w与h的矩形内的最大图片，之后使用指定颜色居中填充空白部分。
  * - fixed：固定宽高，强制缩放。
  */
-type OssResizeMode = 'lfit' | 'mfit' | 'fill' | 'pad' | 'fixed'
+export type OssResizeMode = 'lfit' | 'mfit' | 'fill' | 'pad' | 'fixed'
 
 /**
  * 设置尺寸

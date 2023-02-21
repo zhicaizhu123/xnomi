@@ -1,5 +1,5 @@
 /**
- * @module emoji 表情
+ * @module emoji
  */
 
 export * from './normal'

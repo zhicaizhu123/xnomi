@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "docs": "typedoc --options typedoc.json",
+    "doc": "rimraf ./docs && typedoc --options typedoc.json",
     "build": "pnpm --filter \"@xnomi/**\" build",
     "dev": "pnpm --filter \"@xnomi/**\" dev",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,26 +14,23 @@
   "author": "zhicaizhu123 <zhicaizhu123@126.com>",
   "license": "MIT",
   "devDependencies": {
+    "@antfu/eslint-config": "^0.35.2",
     "@changesets/cli": "^2.26.0",
-    "eslint": "^8.2.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.2",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "lint-staged": "^13.1.2",
     "microbundle": "^0.15.1",
     "prettier": "^2.7.1",
     "rimraf": "^4.1.2",
     "typedoc": "^0.23.25",
+    "typedoc-github-wiki-theme": "^1.0.1",
+    "typedoc-plugin-markdown": "^3.14.0",
     "typescript": "^4.9.5"
   },
   "workspaces": [
     "packages/*"
   ],
-  "dependencies": {
-    "eslint-import-resolver-node": "^0.3.6",
-    "eslint-module-utils": "^2.7.4",
-    "eslint-scope": "^7.1.1",
-    "eslint-utils": "^3.0.0",
-    "eslint-visitor-keys": "^3.3.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhicaizhu123/xnomi.git"
