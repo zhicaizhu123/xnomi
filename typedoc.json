@@ -19,5 +19,5 @@
   "excludeTags": ["@override", "@virtual", "@privateRemarks"],
   "hideGenerator": true,
   "disableSources": true,
-  "out": "wiki"
+  "out": "docs"
 }
